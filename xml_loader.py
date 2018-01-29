@@ -30,7 +30,7 @@ for post in items:
 
 field = ["Title", "Link", "Published Date", "Arthur", "Category"]
 
-with open('post-data.csv', 'w', encoding="utf-8") as file:
+with open('post-data.csv', 'w', encoding="utf-8", newline='\n') as file:
     writer = csv.writer(file)
     writer.writerow(field)
     for row in posts_data:
